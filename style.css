@@ -1,0 +1,14 @@
+:root {
+    --main: #F7F3F5;
+    --text: #171D1C;
+  }
+
+body {
+    background-color: var(--main);
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
