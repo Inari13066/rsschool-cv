@@ -1,10 +1,132 @@
 :root {
-    --main: #F7F3F5;
-    --text: #171D1C;
-  }
+  --size: 0px;
+  --main: #ffffff;
+  --text: #120309;
+  --green: #43aa8b;
+  --pink: #a27e8e;
+  --nav: #14453d;
+}
 
 body {
-    background-color: var(--main);
-    color: var(--text);
-    text-align: left;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main);
+  color: var(--text);
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  background-color: var(--nav);
+}
+
+.nav-item {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-item :hover {
+  color: var(--nav);
+}
+
+nav {
+  line-height: 6vw;
+}
+.nav-link {
+  transition: 0.3s;
+  border-radius: 20%;
+  padding: 10px;
+  background-color: var(--pink);
+  color: var(--main);
+  border: none;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills,
+#contacts,
+#lang,
+#courses {
+  width: 30%;
+}
+
+.section {
+  width: 70%;
+}
+
+.dana {
+  width: 100%;
+  display: flex;
+  background-color: var(--pink);
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100% !important;
+  }
+}
+
+.dana-img {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+}
+
+#home-name {
+  width: 60%;
+}
+
+#home-img {
+  width: 35%;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+.courses-list {
+  list-style-type: none;
+}
+
+.lang-list {
+  list-style-type: none;
+}
+
+.flag-list {
+  vertical-align: baseline;
+}
+
+.section-title {
+  margin-top: 3vw;
+  margin-bottom: 2hw;
+}
+
+pre {
+  text-align: left !important;
+  background-color: var(--text);
+  color: var(--main);
+}
+
+.img-project {
+  width: 60vw;
 }
