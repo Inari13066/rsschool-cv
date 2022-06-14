@@ -1,7 +1,10 @@
 :root {
   --size: 0px;
-  --main: #f7f3f5;
-  --text: #171d1c;
+  --main: #ffffff;
+  --text: #120309;
+  --green: #43aa8b;
+  --pink: #a27e8e;
+  --nav: #14453d;
 }
 
 body {
@@ -18,24 +21,41 @@ body {
 }
 
 .nav-list {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  background-color: var(--nav);
 }
 
 .nav-item {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+.nav-item {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-item :hover {
+  color: var(--nav);
+}
+
+nav {
+  line-height: 6vw;
+}
 .nav-link {
-  line-height: 50px;
   transition: 0.3s;
+  border-radius: 20%;
+  padding: 10px;
+  background-color: var(--pink);
+  color: var(--main);
+  border: none;
 }
 
 .main-container {
@@ -57,6 +77,7 @@ html {
 .dana {
   width: 100%;
   display: flex;
+  background-color: var(--pink);
 }
 
 @media (max-width: 768px) {
@@ -98,4 +119,14 @@ html {
 .section-title {
   margin-top: 3vw;
   margin-bottom: 2hw;
+}
+
+pre {
+  text-align: left !important;
+  background-color: var(--text);
+  color: var(--main);
+}
+
+.img-project {
+  width: 60vw;
 }
