@@ -3,9 +3,117 @@
 <html lang="en">
   <head>
     <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Danuta Karpava</h1>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link"></a>Code</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link"></a>Courses</a></li>
+          <li class="nav-item"><a href="#project" class="nav-link"></a>Education</a></li>
+          <li class="nav-item"><a href="#lang" class="nav-link"></a>Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="dana">
+        <div id="home-name">          
+          <h1 class="section-title">Danuta Karpava</h1>
+          <h2>@Inari13066</h2>
+        </div>
+        <div id="home-img">
+          <img class="dana-img" src="./images/IMG_20210915_190217.jpg" alt="This is Dana">
+        </div>
+      </section>      
+      <section class="section" id="contacts">
+         <h2 class="section-title">Contacts</h2>
+         <ul class="contact-list">
+           <li>
+             <a href="https://telegram.me/Dana_13066">Telegram: @Dana_13066</a>
+           </li>
+           <li>
+            <a href="">Discord: </a>
+           </li>
+           <li>
+            <a href="">E-mail</a>
+           </li>
+           <li>
+             <a href="">LindedIn</a>
+           </li>
+         </ul>
+      </section>
+      <section class="section" id="about">
+        <h2 class="section-title">About me</h2>
+         <p>Here should be some text about Dana.</p>
+      </section>
+      <section class="section" id="skills">
+         <h2 class="section-title">Skills</h2> 
+         <ul class="skills-list">
+           <li>HTML, CSS</li>
+           <li>JavaScript Basics</li>
+           <li>C, C++ Basics</li>
+           <li>Python Basics</li>
+           <li>Git, GitHub</li>
+           <li>VS Code</li>
+           <li>Adobe Photoshop </li>
+           <li></li>
+         </ul>
+      </section>
+      <section class="section" id="code">
+         <h2 class="section-title">Code</h2> 
+         <p>One of solutions on codewars. <a href="https://www.codewars.com/kata/5842df8ccbd22792a4000245">To this kata.</a></p>
+         <code class="code-example">
+           <span>def expanded_form(num):
+
+            expanded_nuber = []
+            l = len(str(num))
+            for i in range (l + 1):
+                num_part = num % (10**i)
+                if num_part != 0:
+                    expanded_nuber.append(num_part)
+                    num = num - num_part
+                
+            return " + ".join(str(x) for x in expanded_nuber[::-1])
+          </span>
+         </code>
+      </section>
+      <section class="section" id="courses">
+         <h2 class="section-title">Courses and Education</h2> 
+         <ul class="courses-list">
+           <li>Harvard</li>
+           <li>RS Scool</li>
+           <li><a href="">BSU Lyceum</a></li>
+           <li><a href="">BSU</a></li>
+         </ul>
+      </section>
+      <section class="section" id="project">
+         <h2 class="section-title">Projects</h2>
+         <p>Here will be Homepage project from cs50 https://inari13066.github.io/cs50-homepage/index.html</p>
+         
+      </section>
+      <section class="section" id="lang">
+         <h2 class="section-title">Languages</h2>
+          <ul class="lang-list">
+          <li> <img class="flag-img" src="./images/flags/eng.png">Eng</li>
+          <li>Ru</li>
+          <li>Bel</li>
+          <li>Ger</li>
+          <li>Spanish</li>
+        </ul>
+      </section>
+    </main>
+    <!-- <h1>Danuta Karpava</h1>
     <h1>@Inari13066</h1>
     <h2>E-mail</h2>
     <a href="mailto:karpova13066@gmail.com">karpova13066@gmail.com</a>
@@ -14,6 +122,7 @@
     <h2>Discord</h2>
     <p>Inari13066</p>
     <h2>Photo</h2>
-    <img src="https://inari13066.github.io/rsschool-cv/IMG_20210915_190217.jpg" alt="This is Dana">
+    <img src="./images/IMG_20210915_190217.jpg" alt="This is Dana" /> -->
+    <footer></footer>
   </body>
 </html>
