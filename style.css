@@ -12,6 +12,12 @@ body {
   background-color: var(--main);
   color: var(--text);
   text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
@@ -129,4 +135,26 @@ pre {
 
 .img-project {
   width: 60vw;
+}
+
+.footer {
+  display: flex;
+  background-color: var(--nav);
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+#footer-year {
+  color: var(--main);
+}
+
+#footer-github,
+#footer-github :visited {
+  color: var(--main);
+  font-size: 24px;
+}
+
+#footer-github :hover {
+  color: var(--pink);
 }
