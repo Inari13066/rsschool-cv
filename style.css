@@ -158,3 +158,8 @@ pre {
 #footer-github :hover {
   color: var(--pink);
 }
+
+#RS {
+  width: 150px; 
+  height: 50px
+}
